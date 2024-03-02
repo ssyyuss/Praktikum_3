@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Halaman Canvas</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Dionesyus Divo Crista Marvino">
+    <meta name="nim" content="234311012">
+    <title>Document</title>
+    <style>
+        * {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+header {
+    background-color: #666;
+    padding: 30px;
+    text-align: center;
+    font-size: 35px;
+    color: white;
+}
+
+nav {
+    float: left;
+    width: 30%;
+     background: #ccc;
+    padding: 20px;
+    size: auto;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+article {
+    float: left;
+    padding: 20px;
+    width: 70%;
+    background-color: #f1f1f1;
+    size: auto;
+ }
+
+section::after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+footer {
+    background-color: #777;
+    padding: 10px;
+    text-align: center;
+    color: white;
+}
+
+@media (max-width: 600px) {
+    nav, article {
+        width: 100%;
+        height: auto;
+    }
+}
+
+    </style>
+</head>
+<body>
+    <header>
+        <h2>Modul 3 No 7</h2>
+    </header>
+
+    <section>
+        <nav> <!-- Navigasi halaman/link-->
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="gambar.html">Gambar</a></li>
+                <li><a href="event.html">Event</a></li>
+                <li><a href="audio.html">Audio</a></li>
+                <li><a href="video.html">Video</a></li>
+                <li><a href="svg.html">SVG</a></li>
+                <li><a href="canvas.html">Canvas</a></li>
+                <li><a href="pendaftaran.html">Pendaftaran</a></li>
+              </ul>
+        </nav>
+        <article>
+            <h1>Judul Artikel</h1>
+            <canvas
+                id="canvas" width="180" height="180" style="background-color:#333;">
+            </canvas>
+            <script src="main.js"></script>
+            <p> kode ini akan menampilkan main.js pada halaman web </p>
+        </article>
+    </section>
+
+    <footer>
+        <i>Web ini dibuat oleh
+            <br>
+        </i>
+        copyright@<i>Dionesyus Divo
+            <br>234311012
+        </i>
+    </footer>
+</body>
+</html>
