@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Halaman Pendaftaran</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Dionesyus Divo Crista Marvino">
+    <meta name="nim" content="234311012">
+    <title>Document</title>
+    <style>
+        * {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+header {
+    background-color: #666;
+    padding: 30px;
+    text-align: center;
+    font-size: 35px;
+    color: white;
+}
+
+nav {
+    float: left;
+    width: 30%;
+     background: #ccc;
+    padding: 20px;
+    size: auto;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+article {
+    float: left;
+    padding: 20px;
+    width: 70%;
+    background-color: #f1f1f1;
+    size: auto;
+ }
+
+section::after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+footer {
+    background-color: #777;
+    padding: 10px;
+    text-align: center;
+    color: white;
+}
+
+@media (max-width: 600px) {
+    nav, article {
+        width: 100%;
+        height: auto;
+    }
+}
+
+    </style>
+</head>
+<body>
+    <header>
+        <h2>Modul 3 No 1</h2>
+    </header>
+
+    <section>
+        <nav> <!-- Navigasi halaman/link-->
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="gambar.html">Gambar</a></li>
+                <li><a href="event.html">Event</a></li>
+                <li><a href="audio.html">Audio</a></li>
+                <li><a href="video.html">Video</a></li>
+                <li><a href="svg.html">SVG</a></li>
+                <li><a href="canvas.html">Canvas</a></li>
+                <li><a href="pendaftaran.html">Pendaftaran</a></li>
+              </ul>
+        </nav>
+        <article>
+            <style>
+                .form-group {
+                    margin-bottom: 10px;
+                    display: flex;
+                    align-items: center;
+                }
+                .form-group label {
+                    display: inline-block;
+                    width: 250px; /* Adjust as needed */
+                    margin-right: 10px;
+                    flex-shrink: 0;
+                }
+                #alamat, #alamat_sekolah_asal {
+                    width: 60%; 
+                    height: 100px;
+                }
+                #no_telp {
+                    width: 60%;
+                }
+                #sekolah_asal {
+                    width: 30%;
+                }
+                /* Custom CSS to adjust label positions */
+                .form-group .inline-label {
+                    width: 59px;
+                }
+                /* Custom CSS to adjust radio button spacing */
+                input[type="radio"] {
+                    margin-right: 5px; /* Adjust as needed */
+                }
+                .container {
+                    margin-left: 10px;
+                }
+                .button2 {
+                    margin-left: 22%;
+                }
+                
+                
+            </style>
+            <h1>Form Penjadwal Pertemuan</h1>
+            <fieldset>
+                <legend>Informasi Pribadi</legend>
+                    <div class="form-group">
+                        <label for="nama">Nama</label>
+                        <input type="text" id="nama" name="nama">
+                    </div>
+                    <div class="form-group">
+                        <label for="nama">No. Telepon</label>
+                        <input type="text" id="telp" name="telp">
+                    </div>
+                    <div class="form-group">
+                        <label for="nama">Alamat Email</label>
+                        <input type="email" id="email" name="email">
+                    </div>
+                    <div class="form-group">
+                        <label for="tempat">Tanggal Lahir</label>
+                        <input type="date" id="b" name="tanggal"><br>
+                    </div>
+                </form>
+            </fieldset>
+            <fieldset>
+                <legend>Permintaan Pertemuan</legend>
+                    <div class="form-group">
+                        <label for="nama">Tujuan Pertemuan</label>
+                        <input type="text" id="nama" name="nama">
+                    </div>
+                    <div class="form-group">
+                        <label for="nama">Tingkat Kepentingan Pertemuan</label>
+                        <input type="range" id="vol" name="vol" min="-50" max="50"><br>
+                    </div>
+                    <div class="form-group">
+                        <label for="nama">Tanggal</label>
+                        <input type="date" id="b" name="tanggal"><br>
+                    </div>
+                    <div class="form-group">
+                        <label for="tempat">Waktu</label>
+                        <input type="time" id="appt" name="appt"><br>
+                    </div>
+                </form>
+            </fieldset>
+                <button type="submit">submit</button>
+            
+                <script>
+                    function resetForm() {
+                        document.querySelector('form').reset();
+                        alert("Anda membatalkan pendaftaran.");
+                    }
+                </script>
+            <p> <!-- Tulis kesimpulan disini--> </p>
+        </article>
+    </section>
+
+    <footer>
+        <i>Web ini dibuat oleh
+            <br>
+        </i>
+        copyright@<i>Dionesyus Divo
+            <br>234311012
+        </i>
+    </footer>
+</body>
+</html>
